@@ -4,7 +4,7 @@
 
 void solveQuadraticEquation(double &a, double &b, double &c){
     if(abs(a)<EPS){
-        printf("this is not quadratic equation, linear solution: %.4f", -c/a);
+        printf("this is not quadratic equation, linear solution: %.4f", -c/b);
         return;
     }
     double d = b*b-4*a*c;
