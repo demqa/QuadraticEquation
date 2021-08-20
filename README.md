@@ -5,3 +5,5 @@ Program waits three coefficients of quadratic equation - a,b,c. it gives solutio
 ### Linux
 * gcc -Wall main.c
 * ./a.out
+## Features
+Program gives solution regardless of the specified coefficients.
