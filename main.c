@@ -3,10 +3,10 @@
 
 int main(){
     double a = 0, b = 0, c = 0;
-    printf("enter 3 numbers. a,b,c - coefficients of quadratic equation\n");
-    scanf("%lf %lf %lf", &a, &b, &c);
     double x1,x2;
     int ans;
+    printf("enter 3 numbers. a,b,c - coefficients of quadratic equation\n");
+    scanf("%lf %lf %lf", &a, &b, &c);
     SolveQuadraticEquation(a,b,c,&x1,&x2,&ans);
     if(ans == 0){
         printf("equation has no roots\n");
