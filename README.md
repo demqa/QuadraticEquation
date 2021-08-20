@@ -7,4 +7,4 @@ Program waits three coefficients of quadratic equation - a,b,c. it gives solutio
 * gcc main.o solve.o -o program -lm
 * ./program
 ## Features
-Program gives solution regardless of the specified coefficients. It can be used not for human, but for machine, because it gives code with numbers of solutions. 
+Program gives solution regardless of the specified coefficients. It can be used not only for human, but in machine, because it gives code with numbers of solutions. 
