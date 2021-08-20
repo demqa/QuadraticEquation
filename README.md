@@ -3,9 +3,8 @@
 Program waits three coefficients of quadratic equation - a,b,c. it gives solutions in real numbers accurate to four digits.
 ## Installation
 ### Linux
-* gcc -Wall main.cpp
-* ./a.out
-### Windows
-compile and build this file with some program, p.e. codeblocks
+* gcc -c main.cpp solve.cpp
+* gcc main.o solve.o -o program -lm
+* ./program
 ## Features
-Program gives solution regardless of the specified coefficients.
+Program gives solution regardless of the specified coefficients. It can be used not for human, but for machine, because it gives code with numbers of solutions. 
