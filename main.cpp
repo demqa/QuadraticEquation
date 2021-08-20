@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 #include <math.h>
 #define EPS 1E-9
 
