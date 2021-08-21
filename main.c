@@ -4,10 +4,9 @@
 int main(){
     double a = 0, b = 0, c = 0;
     double x1 = 0,x2 = 0;
-    int ans = -1;
     printf("enter 3 numbers. a,b,c - coefficients of quadratic equation\n");
     scanf("%lf %lf %lf", &a, &b, &c);
-    SolveQuadraticEquation(a,b,c,&x1,&x2,&ans);
+    int ans = SolveQuadraticEquation(a,b,c,&x1,&x2);
     switch(ans){
         case 0:
             printf("equation has no roots\n");
