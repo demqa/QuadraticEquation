@@ -7,42 +7,41 @@ void CheckZero(double *a){
     }
 }
 
-void SolveLinearEquation(double b, double c, double *x1, int *ans){
+int SolveLinearEquation(double b, double c, double *x1){
     if(b == 0.0){
         if(c == 0.0){
-            *ans = 3;
+            return 3;
         }
         else{
-            *ans = 0;
+            return 0;
         }
     }
     else{
-        *ans = 1;
         *x1 = -c/b;
+        return 1;
     }
 }
 
-void SolveQuadraticEquation(double a, double b, double c, double *x1, double *x2, int *ans){
+int SolveQuadraticEquation(double a, double b, double c, double *x1, double *x2){
     CheckZero(&a);
     CheckZero(&b);
     CheckZero(&c);
     if(a == 0.0){
-        SolveLinearEquation(b,c,x1,ans);
-        return;
+        return SolveLinearEquation(b,c,x1);
     }
     double d = b*b - 4*a*c;
     CheckZero(&d);
     if(d < 0){
-        *ans = 0;
+        return 0;
     }
     if(d == 0.0){
-        *ans = 1;
         *x1 = -b/(2*a);
+        return 1;
     }
     if(d > 0){
-        *ans = 2;
         *x1 = (-b - sqrt(d))/(2*a);
         *x2 = (-b + sqrt(d))/(2*a);
+        return 2;
     }
 }
 
