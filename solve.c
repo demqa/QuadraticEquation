@@ -1,6 +1,9 @@
 #include <math.h>
+#include <assert.h>
+#include <stddef.h>
 
 void CheckZero(double *a){
+    assert(a != NULL);
     static const double EPS = 1E-9;
     if(fabs(*a)<EPS){
         *a = 0.0;
@@ -23,6 +26,8 @@ int SolveLinearEquation(double b, double c, double *x1){
 }
 
 int SolveQuadraticEquation(double a, double b, double c, double *x1, double *x2){
+    assert(x1 != NULL);
+    assert(x2 != NULL);
     CheckZero(&a);
     CheckZero(&b);
     CheckZero(&c);
