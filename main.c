@@ -3,7 +3,7 @@
 
 int main(){
     double a = 0, b = 0, c = 0;
-    double x1 = 0,x2 = 0;
+    double x1 = 0, x2 = 0;
     int mode = 0;
     printf("write 1 if you want to test program, write some other number if you want program to solve some equation for you\n");
     scanf("%d", &mode);
