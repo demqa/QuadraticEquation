@@ -1,10 +1,17 @@
 # QuadraticEquation
 ## Usage
-Program waits some number. If 1 it would activate TestSystem, if not =>
 Program waits three coefficients of quadratic equation - a,b,c. it gives solutions in real numbers accurate to four digits.
 ## Installation
 ### Linux
-* make
-* ./program
+#### PROGRAM
+> make
+
+> ./program
+
+#### DEBUG
+> make debug
+
+> ./debug
 ## Features
-Program gives solution regardless of the specified coefficients. It can be used not only for human, but in machine, because it gives code with numbers of solutions. 
+* Program gives solution regardless of the specified coefficients. It can be used not only for human, but in machine, because it gives code with numbers of solutions.
+* Program uses сonditional compilation for debug mode.
