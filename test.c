@@ -71,7 +71,7 @@ bool TestManager(){
         bool result = Test(Tests[i], &testEq);
         if(!result){
             printf("Test №%d is not passed\n", i);
-	    printf("a = %.4lf, b = %.4lf, c = %.4lf\n", Tests[i].a, Test[i].b, Tests[i].c);
+	    printf("a = %.4lf, b = %.4lf, c = %.4lf\n", Tests[i].a, Tests[i].b, Tests[i].c);
             printf("answer should be: "); PhraseAns(Tests[i].ans);
             printf("program gives:    "); PhraseAns(testEq.ans);
             printf("roots should be %.4lf, %.4lf\n", Tests[i].x1, Tests[i].x2);
