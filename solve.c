@@ -1,19 +1,25 @@
-#include <math.h>
-#include <assert.h>
-#include <stddef.h>
+#include "QEquation.h"
 
 void CheckZero(double *a){
     assert(a != NULL);
     static const double EPS = 1E-9;
-    if(fabs(*a)<EPS){
+    if(fabs(*a) < EPS){
         *a = 0.0;
     }
 }
 
+bool Equal(double a, double b){
+    static const double accuracy = 1E-4;
+    return fabs(a - b) < accuracy;
+}
+
 int SolveLinearEquation(double b, double c, double *x1){
+    assert(x1 != NULL);
+    CheckZero(&b);
+    CheckZero(&c);
     if(b == 0.0){
         if(c == 0.0){
-            return 3;
+            return ANY_VALUE;
         }
         else{
             return 0;
@@ -32,7 +38,7 @@ int SolveQuadraticEquation(double a, double b, double c, double *x1, double *x2)
     CheckZero(&b);
     CheckZero(&c);
     if(a == 0.0){
-        return SolveLinearEquation(b,c,x1);
+        return SolveLinearEquation(b, c, x1);
     }
     double d = b*b - 4*a*c;
     CheckZero(&d);
