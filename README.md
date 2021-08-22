@@ -1,5 +1,6 @@
 # QuadraticEquation
 ## Usage
+Program waits some number. If 1 it would activate TestSystem, if not =>
 Program waits three coefficients of quadratic equation - a,b,c. it gives solutions in real numbers accurate to four digits.
 ## Installation
 ### Linux
