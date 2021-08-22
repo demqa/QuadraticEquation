@@ -67,10 +67,10 @@ bool TestManager(){
         {1, 5, 100, 0, 0, 0},
     };
     struct Equation testEq = {0};
-    for(int i = 1; i <= 8; i++){
+    for(int i = 0; i < 8; i++){
         bool result = Test(Tests[i], &testEq);
         if(!result){
-            printf("Test №%d is not passed\n", i);
+            printf("Test №%d is not passed\n", i+1);
 	    printf("a = %.4lf, b = %.4lf, c = %.4lf\n", Tests[i].a, Tests[i].b, Tests[i].c);
             printf("answer should be: "); PhraseAns(Tests[i].ans);
             printf("program gives:    "); PhraseAns(testEq.ans);
