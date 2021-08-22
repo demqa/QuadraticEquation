@@ -5,7 +5,7 @@ int main(){
     double x1 = 0, x2 = 0;
     int mode = 0;
 
-    printf("write 1 if you want to test program, write some other number if you want program to solve some equation for you\n");
+    printf("write 1 if you want to test program,\n write some other number if you want program to solve some equation for you\n");
     scanf("%d", &mode);
     if(mode == 1){
         bool result = TestManager();
