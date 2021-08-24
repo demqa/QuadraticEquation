@@ -12,6 +12,7 @@ Program waits three coefficients of quadratic equation - a,b,c. it gives solutio
 > make debug
 
 > ./debug
+
 P.S. Before switching modes you have to type
 > make clean
 ## Features
