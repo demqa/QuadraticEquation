@@ -1,3 +1,10 @@
+/*!
+\file
+\brief test system
+
+this file is a test system for program
+*/
+
 #include "QEquation.h"
 
 

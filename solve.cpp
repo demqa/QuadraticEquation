@@ -1,3 +1,10 @@
+/*!
+\file
+\brief file with solution
+
+this file contails functions which gives solution
+*/
+
 #include "QEquation.h"
 
 

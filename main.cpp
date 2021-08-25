@@ -1,3 +1,10 @@
+/*!
+\file
+\brief main file of program
+
+this file lauchs program
+*/
+
 #include "QEquation.h"
 
 /*!
