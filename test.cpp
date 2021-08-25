@@ -95,6 +95,7 @@ bool Test(struct Equation eq, struct Equation *testEq){
 
 bool TestManager(){
     bool flag = true;
+
     const struct Equation tests[] = {
         {0,   0,  0,   0,      0, INF_ROOTS},
         {1,  -5,  6,   3,      2, 2},
@@ -117,13 +118,12 @@ bool TestManager(){
             printf("roots should be: %.4lf, %.4lf\n", tests[i].x1, tests[i].x2);
             printf("program gives:   %.4lf, %.4lf\n\n", testEq.x1, testEq.x2);
         }
-	
-    testEq.x1  = NAN;
-	testEq.x2  = NAN;
-	testEq.ans = 0;
-
-    flag = flag && result;
+        testEq.x1  = NAN;
+        testEq.x2  = NAN;
+        testEq.ans = 0;
+	flag = flag && result;
     }
+	
     return flag;
 }
 
