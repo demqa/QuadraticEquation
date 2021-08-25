@@ -1,0 +1,104 @@
+\hypertarget{QEquation_8h}{}\doxysection{Q\+Equation.\+h File Reference}
+\label{QEquation_8h}\index{QEquation.h@{QEquation.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for Q\+Equation.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{QEquation_8h_adcd75eb9ec2f297a16a92b156d6cb133}{Scan\+Coefficients}} (double $\ast$a, double $\ast$b, double $\ast$c)
+\begin{DoxyCompactList}\small\item\em Scans Quadratic \mbox{\hyperlink{structEquation}{Equation}} Coefficients. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{QEquation_8h_a6a5f6eb51d05aa85aa7aa2e27294eaf2}{Print\+Answer}} (int ans, double x1, double x2)
+\begin{DoxyCompactList}\small\item\em Prints the result of Quadratic \mbox{\hyperlink{structEquation}{Equation}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{QEquation_8h_a35a3af5648ba0413cd1a747737f34417}{Solve\+Quadratic\+Equation}} (double a, double b, double c, double $\ast$x1, double $\ast$x2)
+\begin{DoxyCompactList}\small\item\em Solves Quadratic \mbox{\hyperlink{structEquation}{Equation}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{QEquation_8h_a736e2f8d7e9a0458b41243b742e1a3f6}{Is\+Equal\+Double}} (double a, double b)
+\begin{DoxyCompactList}\small\item\em Checks if double numbers are equal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{QEquation_8h_a3a8fb162f354ec8bda5558af8f61874d}\label{QEquation_8h_a3a8fb162f354ec8bda5558af8f61874d}} 
+const int {\bfseries I\+N\+F\+\_\+\+R\+O\+O\+TS} = 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this is header 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{QEquation_8h_a736e2f8d7e9a0458b41243b742e1a3f6}\label{QEquation_8h_a736e2f8d7e9a0458b41243b742e1a3f6}} 
+\index{QEquation.h@{QEquation.h}!IsEqualDouble@{IsEqualDouble}}
+\index{IsEqualDouble@{IsEqualDouble}!QEquation.h@{QEquation.h}}
+\doxysubsubsection{\texorpdfstring{IsEqualDouble()}{IsEqualDouble()}}
+{\footnotesize\ttfamily bool Is\+Equal\+Double (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})}
+
+
+
+Checks if double numbers are equal. 
+
+Checks if double numbers are equal. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a,b} & -\/ number which equality have to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true is numbers are equal and false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{QEquation_8h_a6a5f6eb51d05aa85aa7aa2e27294eaf2}\label{QEquation_8h_a6a5f6eb51d05aa85aa7aa2e27294eaf2}} 
+\index{QEquation.h@{QEquation.h}!PrintAnswer@{PrintAnswer}}
+\index{PrintAnswer@{PrintAnswer}!QEquation.h@{QEquation.h}}
+\doxysubsubsection{\texorpdfstring{PrintAnswer()}{PrintAnswer()}}
+{\footnotesize\ttfamily void Print\+Answer (\begin{DoxyParamCaption}\item[{int}]{ans,  }\item[{double}]{x1,  }\item[{double}]{x2 }\end{DoxyParamCaption})}
+
+
+
+Prints the result of Quadratic \mbox{\hyperlink{structEquation}{Equation}}. 
+
+Function take parameter ans and prints it\textquotesingle{}s meaning. Also that prints roots if they are. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ans} & -\/ result of solution. \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1,x2} & -\/ roots \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{QEquation_8h_adcd75eb9ec2f297a16a92b156d6cb133}\label{QEquation_8h_adcd75eb9ec2f297a16a92b156d6cb133}} 
+\index{QEquation.h@{QEquation.h}!ScanCoefficients@{ScanCoefficients}}
+\index{ScanCoefficients@{ScanCoefficients}!QEquation.h@{QEquation.h}}
+\doxysubsubsection{\texorpdfstring{ScanCoefficients()}{ScanCoefficients()}}
+{\footnotesize\ttfamily void Scan\+Coefficients (\begin{DoxyParamCaption}\item[{double $\ast$}]{a,  }\item[{double $\ast$}]{b,  }\item[{double $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Scans Quadratic \mbox{\hyperlink{structEquation}{Equation}} Coefficients. 
+
+Function tells user what to do and scans coefficients. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a,b,c} & -\/ parameters of Quadratic \mbox{\hyperlink{structEquation}{Equation}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{QEquation_8h_a35a3af5648ba0413cd1a747737f34417}\label{QEquation_8h_a35a3af5648ba0413cd1a747737f34417}} 
+\index{QEquation.h@{QEquation.h}!SolveQuadraticEquation@{SolveQuadraticEquation}}
+\index{SolveQuadraticEquation@{SolveQuadraticEquation}!QEquation.h@{QEquation.h}}
+\doxysubsubsection{\texorpdfstring{SolveQuadraticEquation()}{SolveQuadraticEquation()}}
+{\footnotesize\ttfamily int Solve\+Quadratic\+Equation (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+
+
+Solves Quadratic \mbox{\hyperlink{structEquation}{Equation}}. 
+
+Solves Quadratic \mbox{\hyperlink{structEquation}{Equation}} ax$^\wedge$2 + bx + c = 0 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a,b,c} & -\/ coefficients of quadratic equation \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1,x2} & -\/ roots \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of roots, or constant I\+N\+F\+\_\+\+R\+O\+O\+TS = 3 
+\end{DoxyReturn}

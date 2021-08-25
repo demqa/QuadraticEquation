@@ -1,0 +1,121 @@
+\hypertarget{solve_8cpp}{}\doxysection{solve.\+cpp File Reference}
+\label{solve_8cpp}\index{solve.cpp@{solve.cpp}}
+
+
+file with solution  
+
+
+{\ttfamily \#include \char`\"{}Q\+Equation.\+h\char`\"{}}\newline
+Include dependency graph for solve.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{solve_8cpp_adcd75eb9ec2f297a16a92b156d6cb133}{Scan\+Coefficients}} (double $\ast$a, double $\ast$b, double $\ast$c)
+\begin{DoxyCompactList}\small\item\em Scans Quadratic \mbox{\hyperlink{structEquation}{Equation}} Coefficients. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{solve_8cpp_a6a5f6eb51d05aa85aa7aa2e27294eaf2}{Print\+Answer}} (int ans, double x1, double x2)
+\begin{DoxyCompactList}\small\item\em Prints the result of Quadratic \mbox{\hyperlink{structEquation}{Equation}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{solve_8cpp_a736e2f8d7e9a0458b41243b742e1a3f6}{Is\+Equal\+Double}} (double a, double b)
+\begin{DoxyCompactList}\small\item\em Checks if double numbers are equal. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{solve_8cpp_a68c94c1824c524cf5519f557920ff271}{Solve\+Linear\+Equation}} (double b, double c, double $\ast$x1)
+\begin{DoxyCompactList}\small\item\em Solves Linear \mbox{\hyperlink{structEquation}{Equation}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{solve_8cpp_a35a3af5648ba0413cd1a747737f34417}{Solve\+Quadratic\+Equation}} (double a, double b, double c, double $\ast$x1, double $\ast$x2)
+\begin{DoxyCompactList}\small\item\em Solves Quadratic \mbox{\hyperlink{structEquation}{Equation}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+file with solution 
+
+this file contails functions which gives solution 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{solve_8cpp_a736e2f8d7e9a0458b41243b742e1a3f6}\label{solve_8cpp_a736e2f8d7e9a0458b41243b742e1a3f6}} 
+\index{solve.cpp@{solve.cpp}!IsEqualDouble@{IsEqualDouble}}
+\index{IsEqualDouble@{IsEqualDouble}!solve.cpp@{solve.cpp}}
+\doxysubsubsection{\texorpdfstring{IsEqualDouble()}{IsEqualDouble()}}
+{\footnotesize\ttfamily bool Is\+Equal\+Double (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})}
+
+
+
+Checks if double numbers are equal. 
+
+Checks if double numbers are equal. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a,b} & -\/ number which equality have to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true is numbers are equal and false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solve_8cpp_a6a5f6eb51d05aa85aa7aa2e27294eaf2}\label{solve_8cpp_a6a5f6eb51d05aa85aa7aa2e27294eaf2}} 
+\index{solve.cpp@{solve.cpp}!PrintAnswer@{PrintAnswer}}
+\index{PrintAnswer@{PrintAnswer}!solve.cpp@{solve.cpp}}
+\doxysubsubsection{\texorpdfstring{PrintAnswer()}{PrintAnswer()}}
+{\footnotesize\ttfamily void Print\+Answer (\begin{DoxyParamCaption}\item[{int}]{ans,  }\item[{double}]{x1,  }\item[{double}]{x2 }\end{DoxyParamCaption})}
+
+
+
+Prints the result of Quadratic \mbox{\hyperlink{structEquation}{Equation}}. 
+
+Function take parameter ans and prints it\textquotesingle{}s meaning. Also that prints roots if they are. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ans} & -\/ result of solution. \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1,x2} & -\/ roots \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{solve_8cpp_adcd75eb9ec2f297a16a92b156d6cb133}\label{solve_8cpp_adcd75eb9ec2f297a16a92b156d6cb133}} 
+\index{solve.cpp@{solve.cpp}!ScanCoefficients@{ScanCoefficients}}
+\index{ScanCoefficients@{ScanCoefficients}!solve.cpp@{solve.cpp}}
+\doxysubsubsection{\texorpdfstring{ScanCoefficients()}{ScanCoefficients()}}
+{\footnotesize\ttfamily void Scan\+Coefficients (\begin{DoxyParamCaption}\item[{double $\ast$}]{a,  }\item[{double $\ast$}]{b,  }\item[{double $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Scans Quadratic \mbox{\hyperlink{structEquation}{Equation}} Coefficients. 
+
+Function tells user what to do and scans coefficients. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a,b,c} & -\/ parameters of Quadratic \mbox{\hyperlink{structEquation}{Equation}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{solve_8cpp_a68c94c1824c524cf5519f557920ff271}\label{solve_8cpp_a68c94c1824c524cf5519f557920ff271}} 
+\index{solve.cpp@{solve.cpp}!SolveLinearEquation@{SolveLinearEquation}}
+\index{SolveLinearEquation@{SolveLinearEquation}!solve.cpp@{solve.cpp}}
+\doxysubsubsection{\texorpdfstring{SolveLinearEquation()}{SolveLinearEquation()}}
+{\footnotesize\ttfamily int Solve\+Linear\+Equation (\begin{DoxyParamCaption}\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1 }\end{DoxyParamCaption})}
+
+
+
+Solves Linear \mbox{\hyperlink{structEquation}{Equation}}. 
+
+Solves Linear \mbox{\hyperlink{structEquation}{Equation}} bx + c = 0 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b,c} & -\/ coefficients of linear equation \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & -\/ root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of roots, or constant I\+N\+F\+\_\+\+R\+O\+O\+TS = 3 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solve_8cpp_a35a3af5648ba0413cd1a747737f34417}\label{solve_8cpp_a35a3af5648ba0413cd1a747737f34417}} 
+\index{solve.cpp@{solve.cpp}!SolveQuadraticEquation@{SolveQuadraticEquation}}
+\index{SolveQuadraticEquation@{SolveQuadraticEquation}!solve.cpp@{solve.cpp}}
+\doxysubsubsection{\texorpdfstring{SolveQuadraticEquation()}{SolveQuadraticEquation()}}
+{\footnotesize\ttfamily int Solve\+Quadratic\+Equation (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+
+
+Solves Quadratic \mbox{\hyperlink{structEquation}{Equation}}. 
+
+Solves Quadratic \mbox{\hyperlink{structEquation}{Equation}} ax$^\wedge$2 + bx + c = 0 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a,b,c} & -\/ coefficients of quadratic equation \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1,x2} & -\/ roots \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of roots, or constant I\+N\+F\+\_\+\+R\+O\+O\+TS = 3 
+\end{DoxyReturn}

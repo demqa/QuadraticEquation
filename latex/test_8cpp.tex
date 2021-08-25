@@ -1,0 +1,92 @@
+\hypertarget{test_8cpp}{}\doxysection{test.\+cpp File Reference}
+\label{test_8cpp}\index{test.cpp@{test.cpp}}
+
+
+test system  
+
+
+{\ttfamily \#include \char`\"{}Q\+Equation.\+h\char`\"{}}\newline
+Include dependency graph for test.\+cpp\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structEquation}{Equation}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{test_8cpp_ae43045d667dd7fc59cf7430574d015dd}{Phrase\+Ans}} (int ans)
+\begin{DoxyCompactList}\small\item\em Prints the meaning of value ans. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{test_8cpp_a870e0b4633769272dd3ce33235e2f15f}{Test}} (struct \mbox{\hyperlink{structEquation}{Equation}} eq, struct \mbox{\hyperlink{structEquation}{Equation}} $\ast$test\+Eq)
+\begin{DoxyCompactList}\small\item\em Uses some test to test program. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{test_8cpp_a29c8cd38b72e2d19a6d58ca2e1523d92}{Test\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em It manages tests. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Launch Test System. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+test system 
+
+this file is a test system for program 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{test.cpp@{test.cpp}!main@{main}}
+\index{main@{main}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Launch Test System. 
+
+Launch Test System and Gives result. \mbox{\Hypertarget{test_8cpp_ae43045d667dd7fc59cf7430574d015dd}\label{test_8cpp_ae43045d667dd7fc59cf7430574d015dd}} 
+\index{test.cpp@{test.cpp}!PhraseAns@{PhraseAns}}
+\index{PhraseAns@{PhraseAns}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{PhraseAns()}{PhraseAns()}}
+{\footnotesize\ttfamily void Phrase\+Ans (\begin{DoxyParamCaption}\item[{int}]{ans }\end{DoxyParamCaption})}
+
+
+
+Prints the meaning of value ans. 
+
+Function take parameter ans and prints it\textquotesingle{}s meaning. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ans} & -\/ result of solution. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{test_8cpp_a870e0b4633769272dd3ce33235e2f15f}\label{test_8cpp_a870e0b4633769272dd3ce33235e2f15f}} 
+\index{test.cpp@{test.cpp}!Test@{Test}}
+\index{Test@{Test}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}}
+{\footnotesize\ttfamily bool Test (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structEquation}{Equation}}}]{eq,  }\item[{struct \mbox{\hyperlink{structEquation}{Equation}} $\ast$}]{test\+Eq }\end{DoxyParamCaption})}
+
+
+
+Uses some test to test program. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em eq} & -\/ test \\
+\hline
+\mbox{\texttt{ out}}  & {\em test\+Eq} & -\/ roots \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if test passed, and false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{test_8cpp_a29c8cd38b72e2d19a6d58ca2e1523d92}\label{test_8cpp_a29c8cd38b72e2d19a6d58ca2e1523d92}} 
+\index{test.cpp@{test.cpp}!TestManager@{TestManager}}
+\index{TestManager@{TestManager}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TestManager()}{TestManager()}}
+{\footnotesize\ttfamily bool Test\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It manages tests. 
+
+Function goes through tests and check if they are passed. Also it prints all information about test and result of program if it wasn\textquotesingle{}t passed/ \begin{DoxyReturn}{Returns}
+true if all tests are passed, false if not. 
+\end{DoxyReturn}
