@@ -1,6 +1,13 @@
 #include "QEquation.h"
 
 
+/*!
+ * \brief Scans Quadratic Equation Coefficients.
+ * 
+ * Function tells user what to do and scans coefficients.
+ * \param[out] a,b,c - parameters of Quadratic Equation.
+ */
+
 void ScanCoefficients(double *a, double *b, double *c){
     assert(a != NULL && b != NULL && c != NULL);
     assert(a != b && b != c && a != c);
@@ -18,6 +25,15 @@ void ScanCoefficients(double *a, double *b, double *c){
         }
     }
 }
+
+/*!
+ * \brief Prints the result of Quadratic Equation.
+ * 
+ * Function take parameter ans and prints it's meaning.
+ * Also that prints roots if they are.
+ * \param[in] ans - result of solution.
+ * \param[in] x1,x2 - roots
+ */
 
 void PrintAnswer(int ans, double x1, double x2){
     assert(!isnan(x1) && !isnan(x2));
@@ -41,6 +57,13 @@ void PrintAnswer(int ans, double x1, double x2){
     }
 }
 
+/*!
+ * \brief Checks if double numbers are equal.
+ * 
+ * Checks if double numbers are equal.
+ * \param[in] a,b - number which equality have to be checked.
+ * \return Returns true is numbers are equal and false if not.
+ */
 
 bool IsEqualDouble(double a, double b){
     assert(!isnan(a) && !isnan(b));
@@ -50,6 +73,15 @@ bool IsEqualDouble(double a, double b){
     return fabs(a - b) < EPS;
 }
 
+
+/*!
+ * \brief Solves Linear Equation
+ * 
+ * Solves Linear Equation bx + c = 0
+ * \param[in] b,c - coefficients of linear equation
+ * \param[out] x1 - root
+ * \return number of roots, or constant INF_ROOTS = 3 
+ */
 
 int SolveLinearEquation(double b, double c, double *x1){
     assert(x1 != NULL);
@@ -71,6 +103,14 @@ int SolveLinearEquation(double b, double c, double *x1){
 }
 
 
+/*!
+ * \brief Solves Quadratic Equation
+ * 
+ * Solves Quadratic Equation ax^2 + bx + c = 0
+ * \param[in] a,b,c - coefficients of quadratic equation
+ * \param[out] x1,x2 - roots
+ * \return number of roots, or constant INF_ROOTS = 3 
+ */
 
 int SolveQuadraticEquation(double a, double b, double c, double *x1, double *x2){
     assert(x1 != NULL && x2 != NULL);
@@ -96,4 +136,3 @@ int SolveQuadraticEquation(double a, double b, double c, double *x1, double *x2)
         return 2;
     }
 }
-

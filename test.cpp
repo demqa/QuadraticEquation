@@ -1,6 +1,13 @@
 #include "QEquation.h"
 
 
+/*!
+ * Structure used for debug program.
+ * \param a,b,c - parameters of Quadratic Equation.
+ * \param x1,x2 - roots.
+ * \param ans - result of solvation
+ */
+
 struct Equation{
     double a;
     double b;
@@ -9,6 +16,14 @@ struct Equation{
     double x2;
     int ans;
 };
+
+
+/*!
+ * \brief Prints the meaning of value ans.
+ * 
+ * Function take parameter ans and prints it's meaning.
+ * \param[in] ans - result of solution.
+ */
 
 void PhraseAns(int ans){
     switch (ans){
@@ -26,6 +41,14 @@ void PhraseAns(int ans){
             break;
     }
 }
+
+/*!
+ * \brief Uses some test to test program.
+ * 
+ * \param[in] eq - test
+ * \param[out] testEq - roots
+ * \result true if test passed, and false if not.
+ */
 
 bool Test(struct Equation eq, struct Equation *testEq){
     assert(testEq != NULL);
@@ -54,6 +77,14 @@ bool Test(struct Equation eq, struct Equation *testEq){
     }
 }
 
+/*!
+ * \brief It manages tests.
+ * 
+ * Function goes through tests and check if they are passed.
+ * Also it prints all information about test and result
+ * of program if it wasn't passed/
+ * \result true if all tests are passed, false if not.
+ */
 
 bool TestManager(){
     bool flag = true;
@@ -67,7 +98,7 @@ bool TestManager(){
         {49, -42, 9,   0.4286, 0, 1},
         {1,   5,  100, 0,      0, 0},
     };
-    
+
     struct Equation testEq = {0};
     for(int i = 0; i < sizeof(tests) / sizeof(Equation); i++){
         bool result = Test(tests[i], &testEq);
@@ -88,6 +119,12 @@ bool TestManager(){
     }
     return flag;
 }
+
+/*!
+ * \brief Launch Test System
+ * 
+ * Launch Test System and Gives result.
+ */
 
 int main(){
     bool result = TestManager();

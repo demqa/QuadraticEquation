@@ -23,4 +23,3 @@ test.o: test.cpp
 
 clean:
 	rm -rf *.o program debug
-

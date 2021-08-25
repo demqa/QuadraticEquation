@@ -1,5 +1,10 @@
 #include "QEquation.h"
 
+/*!
+ * \brief Launchs Program which Solves Quadratic Equation
+ * 
+ * Launchs Program which Solves Quadratic Equation
+ */
 
 int main(){
     double a = NAN, b = NAN, c = NAN;
