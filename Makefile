@@ -6,7 +6,7 @@ CFLAGS=-c
 
 all: program
 
-program: main.o solve.o
+program: main.o solve.o 
 	$(CC) main.o solve.o -o program -lm
 
 debug: solve.o test.o
