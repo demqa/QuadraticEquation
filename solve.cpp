@@ -71,11 +71,6 @@ int SolveLinearEquation(double b, double c, double *x1){
 }
 
 
-/*!
-    Находит сумму двух чисел
-    \param a,b Складываемые числа
-    \return Сумму двух чисел, переданных в качестве аргументов
-*/
 
 int SolveQuadraticEquation(double a, double b, double c, double *x1, double *x2){
     assert(x1 != NULL && x2 != NULL);
