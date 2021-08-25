@@ -6,23 +6,20 @@ CFLAGS=-c
 
 all: program
 
-program: main.o solve.o test.o
-	$(CC) main.o solve.o test.o -o program -lm
+program: main.o solve.o
+	$(CC) main.o solve.o -o program -lm
 
-debug: main.o_debug solve.o test.o
-	$(CC) main.o solve.o test.o -o debug -lm
+debug: solve.o test.o
+	$(CC) solve.o test.o -o debug -lm
 
-main.o_debug: main.c
-	$(CC) $(CFLAGS) -DDEBUGMODE main.c
+main.o: main.cpp
+	$(CC) $(CFLAGS) main.cpp
 
-main.o: main.c
-	$(CC) $(CFLAGS) main.c
+solve.o: solve.cpp
+	$(CC) $(CFLAGS) solve.cpp
 
-solve.o: solve.c
-	$(CC) $(CFLAGS) solve.c
-
-test.o: test.c
-	$(CC) $(CFLAGS) test.c
+test.o: test.cpp
+	$(CC) $(CFLAGS) test.cpp
 
 clean:
 	rm -rf *.o program debug
