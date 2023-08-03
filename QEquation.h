@@ -8,6 +8,7 @@ this is header for program
 #include <math.h>
 #include <assert.h>
 #include <stddef.h>
+#include <stdlib.h>
 #include <stdio.h>
 
 int SolveQuadraticEquation(double a, double b, double c, double *x1, double *x2);
